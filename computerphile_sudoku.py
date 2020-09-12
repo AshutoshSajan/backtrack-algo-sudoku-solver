@@ -30,7 +30,7 @@ grid = [
 # print a readable grid
 # print(np.matrix(grid))
 
-# to check whether a number is available in a row, column or i  a 3 * 3 grid
+# to check whether a number is available in a row, column or in a 3 * 3 grid
 def possible(y,x,n):
     global grid
     for i in range(0,9):
