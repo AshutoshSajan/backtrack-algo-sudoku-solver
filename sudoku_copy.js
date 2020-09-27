@@ -65,25 +65,25 @@ function printBoard(board) {
 function possible(y, x, num) {
   // checking the number availability vertically and horizontally in all rows and columns
 
-  //   for (let i = 0; i < board.length; i++) {
-  //     if (board[y][i] === num || board[i][x] === num) {
-  //       return false;
-  //     }
-  //   }
+  for (let i = 0; i < board.length; i++) {
+    if (board[y][i] === num || board[i][x] === num) {
+      return false;
+    }
+  }
 
   // checking the number availability vertically in columns
-  for (let i = 0; i < board.length; i++) {
-    if (board[y][i] === num) {
-      return false;
-    }
-  }
+  // for (let i = 0; i < board.length; i++) {
+  //   if (board[y][i] === num) {
+  //     return false;
+  //   }
+  // }
 
-  // checking the number availability horizontally in rows
-  for (let i = 0; i < board.length; i++) {
-    if (board[i][x] === num) {
-      return false;
-    }
-  }
+  // // checking the number availability horizontally in rows
+  // for (let i = 0; i < board.length; i++) {
+  //   if (board[i][x] === num) {
+  //     return false;
+  //   }
+  // }
 
   let x0 = Math.floor(x / 3) * 3;
   let y0 = Math.floor(y / 3) * 3;
@@ -129,7 +129,7 @@ console.log(
 printBoard(board);
 
 console.log(
-  `\n===============================
+  `\n\n===============================
         Solved Board
 ===============================
 `

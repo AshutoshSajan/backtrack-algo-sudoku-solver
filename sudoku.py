@@ -10,7 +10,7 @@ board = [
     [0,4,9,2,0,6,0,0,7]
 ]
 
-# main backtarck aglo function
+# main backtarck algorithm function
 def solve(board):
     find = find_empty(board)
     if not find:
